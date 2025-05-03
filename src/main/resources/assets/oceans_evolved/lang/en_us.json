@@ -1,3 +1,7 @@
 {
-  "item.oceans_evolved.seashell": "Seashell"
+  "item.oceans_evolved.seashell": "Seashell",
+  "block.oceans_evolved.seashell_pile_sand": "Sandy Pile of Seashells",
+  "block.oceans_evolved.seashell_pile_gravel": "Gravelly Pile of Seashells",
+
+  "creativetab.oceans_evolved": "Oceans Evolved"
 }

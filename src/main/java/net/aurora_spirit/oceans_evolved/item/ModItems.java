@@ -1,6 +1,7 @@
 package net.aurora_spirit.oceans_evolved.item;
 
 import net.aurora_spirit.oceans_evolved.OceansEvolved;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -23,9 +24,15 @@ public class ModItems {
     }
 
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
+        //add items to vanilla creative inventory tabs
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(SEASHELL);
         }
+    }
+
+    public static void addModCreative(CreativeModeTab.ItemDisplayParameters pParameters, CreativeModeTab.Output pOutput) {
+        //add items to the mod's creative tab
+        pOutput.accept(SEASHELL.get());
     }
 
 

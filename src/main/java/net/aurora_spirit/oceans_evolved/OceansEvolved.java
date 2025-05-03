@@ -1,6 +1,7 @@
 package net.aurora_spirit.oceans_evolved;
 
 import com.mojang.logging.LogUtils;
+import net.aurora_spirit.oceans_evolved.block.ModBlocks;
 import net.aurora_spirit.oceans_evolved.item.ModCreativeModeTabs;
 import net.aurora_spirit.oceans_evolved.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,6 +32,7 @@ public class OceansEvolved
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -55,6 +57,7 @@ public class OceansEvolved
     {
         //sending this off to the respective class files. i can't deal with this much file-hopping.
         ModItems.addCreative(event);
+        ModBlocks.addCreative(event);
 
     }
 

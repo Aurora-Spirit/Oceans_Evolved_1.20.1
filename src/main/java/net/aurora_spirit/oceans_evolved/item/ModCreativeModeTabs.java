@@ -1,6 +1,7 @@
 package net.aurora_spirit.oceans_evolved.item;
 
 import net.aurora_spirit.oceans_evolved.OceansEvolved;
+import net.aurora_spirit.oceans_evolved.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,7 +21,8 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SEASHELL.get()))
                     .title(Component.translatable("creativetab.oceans_evolved"))
                     .displayItems((pParameters,pOutput) -> {
-                        pOutput.accept(ModItems.SEASHELL.get());
+                        ModItems.addModCreative(pParameters,pOutput);
+                        ModBlocks.addModCreative(pParameters,pOutput);
                     })
                     .build());
 
