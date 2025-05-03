@@ -1,6 +1,8 @@
 package net.aurora_spirit.oceans_evolved;
 
 import com.mojang.logging.LogUtils;
+import net.aurora_spirit.oceans_evolved.item.ModCreativeModeTabs;
+import net.aurora_spirit.oceans_evolved.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,6 +29,9 @@ public class OceansEvolved
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -48,6 +53,8 @@ public class OceansEvolved
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        //sending this off to the respective class files. i can't deal with this much file-hopping.
+        ModItems.addCreative(event);
 
     }
 
