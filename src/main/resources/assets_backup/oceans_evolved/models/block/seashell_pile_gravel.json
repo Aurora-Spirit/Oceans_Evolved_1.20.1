@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "oceans_evolved:block/seashell_pile_gravel"
+  }
+}

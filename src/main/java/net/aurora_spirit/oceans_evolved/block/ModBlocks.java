@@ -8,6 +8,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,9 +24,9 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> SEASHELL_PILE_SAND = registerBlock("seashell_pile_sand",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SUSPICIOUS_SAND).requiresCorrectToolForDrops()));
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SUSPICIOUS_SAND).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SEASHELL_PILE_GRAVEL = registerBlock("seashell_pile_gravel",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SUSPICIOUS_SAND).requiresCorrectToolForDrops()));
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SUSPICIOUS_GRAVEL).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
