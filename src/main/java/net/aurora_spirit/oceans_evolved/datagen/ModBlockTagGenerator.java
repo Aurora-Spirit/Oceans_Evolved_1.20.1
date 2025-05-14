@@ -2,9 +2,11 @@ package net.aurora_spirit.oceans_evolved.datagen;
 
 import net.aurora_spirit.oceans_evolved.OceansEvolved;
 import net.aurora_spirit.oceans_evolved.block.ModBlocks;
+import net.aurora_spirit.oceans_evolved.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -24,6 +26,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SEASHELL_PILE_SAND.get(),
                         ModBlocks.SEASHELL_PILE_GRAVEL.get()
                 );
+
+        this.tag(ModTags.Blocks.GRAVEL).add(Blocks.GRAVEL);
 
     }
 }

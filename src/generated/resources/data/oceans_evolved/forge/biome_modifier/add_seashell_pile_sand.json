@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_beach",
+  "features": "oceans_evolved:seashell_pile_sand_placed",
+  "step": "underground_ores"
+}
