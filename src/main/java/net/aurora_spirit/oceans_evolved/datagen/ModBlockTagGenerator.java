@@ -26,6 +26,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SEASHELL_PILE_SAND.get(),
                         ModBlocks.SEASHELL_PILE_GRAVEL.get()
                 );
+        this.tag(BlockTags.SAND).add(ModBlocks.SEASHELL_PILE_SAND.get());
 
         this.tag(ModTags.Blocks.GRAVEL).add(Blocks.GRAVEL);
 

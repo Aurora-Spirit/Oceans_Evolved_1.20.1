@@ -1,0 +1,10 @@
+{
+  "ocean_ambience": {
+    "sounds": [
+      {
+        "name": "oceans_evolved:ocean",
+        "stream": true
+      }
+    ]
+  }
+}

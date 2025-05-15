@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "oceans_evolved:block/giant_conch",
+      "y": 0
+    },
+    "facing=north": {
+      "model": "oceans_evolved:block/giant_conch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "oceans_evolved:block/giant_conch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "oceans_evolved:block/giant_conch",
+      "y": 180
+    }
+  }
+}

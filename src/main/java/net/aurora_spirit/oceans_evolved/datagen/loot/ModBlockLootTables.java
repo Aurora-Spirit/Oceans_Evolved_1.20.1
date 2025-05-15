@@ -33,6 +33,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSeashellOreDrops(block, ModItems.SEASHELL.get()));
         this.add(ModBlocks.SEASHELL_PILE_GRAVEL.get(),
                 block -> createSeashellOreDrops(block, ModItems.SEASHELL.get()));
+        this.dropSelf(ModBlocks.GIANT_CONCH.get());
     }
 
     protected LootTable.Builder createSeashellOreDrops(Block pBlock, Item item) {
